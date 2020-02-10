@@ -1,6 +1,6 @@
 {
-  "name": "second-app",
-  "short_name": "second-app",
+  "name": "Quotes app",
+  "short_name": "Quotes",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

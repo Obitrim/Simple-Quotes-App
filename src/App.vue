@@ -103,14 +103,25 @@
         return parseInt(this.quotes.length);
       }
     }
-  }
+  };
 </script>
 
 
 
 <style>
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: url('/img/bg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
   #container {
     position: relative;
+    background-color: #fff;
+    margin-top: 1rem;
   }
 
   form {
@@ -141,7 +152,6 @@
   }
 
   .quotes {
-    min-height: 30vh;
     color: rgb(165, 161, 161);
   }
 
@@ -149,16 +159,33 @@
     color: rgb(53, 53, 53);
     min-height: 130px;
     margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-
+    border-radius: 0.5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff;
+    transition: 0.25s;
     padding: 15px;
   }
 
+
   .quote:hover {
     cursor: pointer;
+    transform: translateY(-0.5rem);
+  }
+  
+  .btn-primary {
+    background: #b90913 !important;
+    border: none !important;
   }
 
+  .btn-primary:focus {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .alert-info {
+    background-color: rgba(189, 9, 19, 0.9) !important;
+    color: #fff !important;
+  }
 
 
 </style>

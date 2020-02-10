@@ -49,7 +49,7 @@
                 this.total_items = newSize;
             }
         }
-    }
+    };
 </script>
 
 
@@ -79,7 +79,7 @@
         color: #fff;
         transition: 0.3s;
         text-align: center;
-        background-color: rgb(21, 106, 180);
+        background-color: #b90913 ;
         overflow-x: visible;
     }
 
